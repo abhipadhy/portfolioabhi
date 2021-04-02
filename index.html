@@ -111,6 +111,23 @@
         </div>
 
         <h2 id="projects">my projects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum sed natus laborum, dolorem dolore vero tempora, magnam expedita soluta assumenda molestiae similique. Laboriosam ipsa quo, nobis maiores alias inventore!</p>
+
+        <div class="projectbox">
+            <div class="prj">
+                
+            </div>
+
+            <div class="prj">
+                
+            </div>
+
+            <div class="prj">
+                
+            </div>
+        </div>
+
+    
     </div>
 
 
@@ -141,21 +158,39 @@
     };
 
     function openNav() {
-        document.querySelector('.menu').style.width = "30%";
-        document.querySelector('.menubtn').style.display="none";
-        document.querySelector('.top').style.Right="30%";
-        document.querySelector('.top').style.width = "70%";
-        document.querySelector('.topgrad').style.Right="30%";
-        document.querySelector('.topgrad').style.width = "70%";
-        document.querySelector('.logolink').style.left ="2%";
-        document.querySelector('.top').style.transition="0.4s";
-        document.querySelector('.topgrad').style.transition="0.4s";
-        document.querySelector('.top2').style.Right="30%";
-        document.querySelector('.top2').style.width = "70%";
-        document.querySelector('.top2').style.transition="0.4s";
+        console.log(screen.width);
+        if(screen.width<500){
+            document.querySelector('.menu').style.width = "100%";
+            document.querySelector('.menubtn').style.display="none";
+            document.querySelector('.top').style.Right="0%";
+            document.querySelector('.top').style.width = "0%";
+            document.querySelector('.topgrad').style.Right="0%";
+            document.querySelector('.topgrad').style.width = "0%";
+            document.querySelector('.logolink').style.left ="2%";
+            document.querySelector('.top').style.transition="0.4s";
+            document.querySelector('.topgrad').style.transition="0.4s";
+            document.querySelector('.top2').style.Right="0%";
+            document.querySelector('.top2').style.width = "0%";
+            document.querySelector('.top2').style.transition="0.4s";
+        }
+        else{
+            document.querySelector('.menu').style.width = "30%";
+            document.querySelector('.menubtn').style.display="none";
+            document.querySelector('.top').style.Right="30%";
+            document.querySelector('.top').style.width = "70%";
+            document.querySelector('.topgrad').style.Right="30%";
+            document.querySelector('.topgrad').style.width = "70%";
+            document.querySelector('.logolink').style.left ="2%";
+            document.querySelector('.top').style.transition="0.4s";
+            document.querySelector('.topgrad').style.transition="0.4s";
+            document.querySelector('.top2').style.Right="30%";
+            document.querySelector('.top2').style.width = "70%";
+            document.querySelector('.top2').style.transition="0.4s";
+        }
     };
 
     function closenav(){
+      
         document.querySelector('.menu').style.width = "0%";
         document.querySelector('.menubtn').style.display="block";
         document.querySelector('.top').style.Right="0%";
