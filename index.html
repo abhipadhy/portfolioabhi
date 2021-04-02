@@ -176,11 +176,14 @@
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
         document.querySelector("#loader").style.visibility = "visible"; 
-          
+        document.querySelector('.menubtn').style.display="none";
+        document.querySelector('.social').style.display="none";  
     } else { 
         setTimeout(() => {
             console.log('loading');
-            document.querySelector("#loader").style.display = "none";       
+            document.querySelector("#loader").style.display = "none";   
+            document.querySelector('.menubtn').style.display="block";   
+            document.querySelector('.social').style.display="block";   
               document.querySelector("body").style.visibility = "visible";
         }, 1000);
         
