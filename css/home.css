@@ -127,43 +127,31 @@ h3{
     }
 }
 
-h4{
-    position: absolute;
-    top: 40%;
-    right: 4%;
-    background: none;
-    text-transform: capitalize;
-    font-weight: 300;
-    color: #C4C4C4;
-    transform: rotate(-90deg);
-}
 
 .skillbox{
+    display: flex;
+    flex-wrap: wrap;
     width: 70%;
     margin-left:20%;
     margin-right: 15%;
-    margin-top: 4%;
-    height:max-content;
-    min-height: 100%;
+    margin-top: 2%;
+    height:100%;
 }
 
 .projectbox{
-    position:relative;
-    top:100%;
-    left: 0%;
     width: 90%;
-    display:flexbox;
-    flex-wrap: wrap;
     margin-left:5%;
     margin-right: 5%;
     margin-top: 4%;
     height: max-content;
-    min-height: 40%;
     padding-bottom: 10%;
 }
 
 .prj{
     margin-left: 2%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
     width: 30%;
     height: 40%;
     transition: 0.4s;
@@ -324,8 +312,8 @@ h2{
     color:  #5A7ACB;
     text-transform: capitalize;
     font-weight: 500;
-    margin-left: 4%;
-    margin-top: 3%;
+    margin-left: 8%;
+    margin-top: 4%;
     margin-bottom: 0%;
     padding: 0%;
 }
@@ -409,8 +397,8 @@ p{
     word-spacing: 5px;
     margin-top: 2%;
     text-align:justify;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-bottom: 0%;
     padding-bottom: 0%;
 }
@@ -441,8 +429,8 @@ p{
     
     .skillbox{
         width: 80%;
-        margin-left: 16%;
-        margin-right: 4%;
+        margin-left: 15%;
+        margin-right: 5%;
     }
 
     p,h2{
