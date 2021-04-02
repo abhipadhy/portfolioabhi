@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Padhy</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body style="visibility: visible;">
+    <div id="loader" class="center"></div> 
+    <div class="top" onload="view()" >
+    </div>
+
+    <div class="topgrad">
+        <a href="" class="logolink" ></a>
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+        <h1 id="#ho">Abhishek Padhy</h1>
+        <h3>UI/UX Designer & full stack web developer</h3>
+        <h4>scroll</h4>
+    </div>
+    
+
+
+    <div class="top2">
+        <h2 id="about">about me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda nostrum in doloremque quisquam porro eum ex ducimus dolorem soluta voluptatibus saepe magnam quos fugit repudiandae, quasi voluptas quae. Dolorem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit molestiae cumque illo voluptas. Autem nobis assumenda libero nesciunt commodi laudantium eveniet debitis maiores, harum ullam eum enim doloribus fuga quidem?</p>
+        <h2 id="skill">my skills</h2>
+    </div>
+
+    <div class="menu">
+        <div style="display: flex;">
+            <h2 id="menu">menu</h2>
+            <span onclick="closenav()" ><h2 id="close">&times;</h2></span>
+        </div>
+       
+     
+        <ul>
+            <a href="#ho"><li>home</li></a>
+            <a href="#about"><li>about me </li></a>
+            <a href="#skill"><li>my skills</li></a>
+            <a href="#projects"><li>my projects</li></a>
+            <a href="#contact"><li>contact me</li></a>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    function view(){
+        document.querySelector('h1').style.opacity=0.80;
+        document.querySelector('h3').style.opacity=0.80;
+        
+    };
+
+    function openNav() {
+        document.querySelector('.menu').style.width = "30%";
+        document.querySelector('.menubtn').style.display="none";
+        document.querySelector('.top').style.Right="30%";
+        document.querySelector('.top').style.width = "70%";
+        document.querySelector('.topgrad').style.Right="30%";
+        document.querySelector('.topgrad').style.width = "70%";
+        document.querySelector()
+        document.querySelector('.top').style.transition="0.4s";
+        document.querySelector('.topgrad').style.transition="0.4s";
+    };
+
+    function closenav(){
+        document.querySelector('.menu').style.width = "0%";
+        document.querySelector('.menubtn').style.display="block";
+        document.querySelector('.top').style.Right="0%";
+        document.querySelector('.topgrad').style.Right="0%";
+        document.querySelector('.topgrad').style.width = "100%"
+        document.querySelector('.top').style.width = "100%"
+        document.querySelector('.top').style.transition="0.4s";
+        document.querySelector('.topgrad').style.transition="0.4s";
+    }
+</script>
+
+<script>
+    document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+          
+    } else { 
+        setTimeout(() => {
+            console.log('loading');
+            document.querySelector("#loader").style.display = "none";       
+              document.querySelector("body").style.visibility = "visible";
+        }, 1000);
+        
+    } 
+
+    document.addEventListener('scroll',()=>{
+        var pos = window.scrollY;
+        if(pos>500){
+            document.querySelector('.menu').style.background="rgba(46, 46, 46, 1)";
+            document.querySelector('.menu').style. transition="0.4s";
+        }
+        else{
+            document.querySelector('.menu').style. background= "rgba(19, 19, 19, 1)";
+            document.querySelector('.menu').style. transition="0.4s";
+        }
+    });
+}; 
+</script>
+</html>

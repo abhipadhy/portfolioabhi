@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+body{
+    background-color: #131313;
+}
+
+#loader { 
+    border: 10px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 10px solid #855dcf; 
+    width: 40px; 
+    height: 40px; 
+    animation: spin 2s linear infinite; 
+} 
+
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+} 
+
+.top{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(abhi.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.logolink{
+    position: absolute;
+    left: 1%;
+    width: 12%;
+    height: 24%;
+    background-image: url(logo/logo.png);
+    background-position: 50% 50%;
+    background-color: transparent;
+    background-size: cover;
+}
+
+.topgrad{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(19, 19, 19, 0) 32.19%, #131313 100%);
+}
+
+h1{
+    position: absolute;
+    top:60%;
+    left: 4%;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    color: #dad8d8;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    animation: ease-in-out 5s h1;
+}
+
+@keyframes h1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+h3{
+    position: absolute;
+    top:80%;
+    left: 4%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ACE099;
+    background: none;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    animation: ease-in-out 8s h3;
+}
+
+@keyframes h3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+h4{
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    background: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #C4C4C4;
+    transform: rotate(-90deg);
+}
+
+.top2{
+    position: absolute;
+    top:100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #131313;
+}
+
+h2{
+    color:  #5A7ACB;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.menubtn {
+    position: absolute;
+    background-color: none;
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+    font-size: 30px;
+    right: 5%;
+    transition: 0.3s;
+    top: 10%;
+    cursor: pointer;
+}
+
+.menubtn:hover{
+    color:#00A8E1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#close{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 50%;
+    font-size: 30px;
+    color: #ACE099;
+    transition: 0.3s;
+
+}
+
+#close:hover{
+    color: #00A8E1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu{
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.80);
+    transition: 0.8s;
+}
+
+#menu{
+    background: none;
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+ul a{
+    background: none;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #A9B4A6;
+    list-style: none;
+    font-size: 22px;
+    padding: 1.5%;
+    display: block;
+    transition: 0.4s;
+}
+
+ul a li{
+    background: none;
+    background-color: transparent;
+}
+
+ul a:hover{
+    color: #ACE099;
+    transition: 0.4s;
+}
+p{
+    color: #EFE7E7;
+    word-spacing: 5px;
+    margin-top: 3%;
+    text-align:justify;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:#2e2e2e;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00A8E1;
+  }
+  
